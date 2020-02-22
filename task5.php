@@ -19,24 +19,9 @@ $opel = [
     'doors' => 15,
     'year' => '1900'
 ];
-$result = [$bmw, $toyota, $opel];
-
+$result = ['bmw' => $bmw, 'toyota' =>  $toyota, 'opel' => $opel];
 foreach ($result as $key => $value) {
-    switch ($key) {
-        case 0:
-            echo 'CAR bmw<br/>';
-            break;
-        case 1:
-            echo 'CAR Toyota<br/>';
-            break;
-        case 2:
-            echo 'CAR Opel<br/>';
-            break;
-    }
-
-
-    foreach ($value as $key => $value) {
-        echo $value . '';
-    }
-    echo '<br/>';
+    echo 'CAR ' . $key . '<br/>';
+    $res = implode (' ', $value);
+    echo $res . '<br/>';
 }
