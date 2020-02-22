@@ -21,8 +21,8 @@ $opel = [
 ];
 $result = [$bmw, $toyota, $opel];
 
-for ($i = 0; $i < sizeof($result); $i++) {
-    switch ($i){
+foreach ($result as $key => $value) {
+    switch ($key) {
         case 0:
             echo 'CAR bmw<br/>';
             break;
@@ -33,8 +33,10 @@ for ($i = 0; $i < sizeof($result); $i++) {
             echo 'CAR Opel<br/>';
             break;
     }
-    foreach ($result[$i] as $key => $value) {
-        echo $value.' ';
+
+
+    foreach ($value as $key => $value) {
+        echo $value . '';
     }
     echo '<br/>';
 }
