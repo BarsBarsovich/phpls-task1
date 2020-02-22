@@ -13,6 +13,6 @@ if ($age >= ARMY_AGE && $age <= MAX_AGE) {
     echo 'Вам пора на пенсию';
 } elseif ($age >= MIN_AGE && $age <= TEEN_AGE) {
     echo 'Вам ещё рано работать';
-} else{
+} else {
     echo 'Неизвестный возраст';
 }
